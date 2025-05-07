@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jQuery DOM Update Example </title>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js" > </script>
+
+  <style>
+
+    h1 {
+        font-size: 36px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: blueviolet;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #message {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: brown;
+    }
+
+    #updateBtn {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        padding: 10px 14px;
+        background-color: aliceblue;
+        color: black;
+        font-style: italic;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+    #updateBtn:hover {
+        background-image: linear-gradient( #21d1a5 );
+
+    }
+  </style>
+</head>
+<body>
+
+    <h1> JQUERY PAGE </h1>
+    <div id ="message"> CLICK THE BUTTON TO UPDATE MESSAGE</div>
+    <div id="updateBtn" > UPDATE MESSAGE </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#updateBtn').click(function(){
+                $('#message').text('The message has been updated using jQuery!');
+            });
+        });
+    </script>
+</body>
+</html>

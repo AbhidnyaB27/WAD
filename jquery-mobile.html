@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modern jQuery Mobile Page</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery + jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Extra Styling -->
+  <style>
+    .custom-header {
+      background: linear-gradient(45deg, #0077cc, #00c8c8);
+      color: white;
+      text-align: center;
+    }
+
+    .custom-footer {
+      background: #f4f4f4;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .ui-content {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .ui-btn {
+      background-color: #0077cc !important;
+      border: none !important;
+      color: white !important;
+      font-weight: bold;
+    }
+
+    .ui-btn:hover {
+      background-color: #005fa3 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div data-role="page" id="fancyPage">
+
+    <div data-role="header" class="custom-header">
+      <h1>My Stylish Page</h1>
+    </div>
+
+    <div data-role="content">
+      <p>✨ Welcome to mobile page!</p>
+      <a href="#" class="ui-btn ui-corner-all ui-shadow">Click Me</a>
+    </div>
+
+    <div data-role="footer" class="custom-footer">
+      <h4>© 2025 YourSite</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>
